@@ -36,7 +36,6 @@
         </div>
       </nav>
 
-
     <br><br>
     <div class="container text-center">
         <div class="row">
@@ -48,69 +47,46 @@
                 <input id="pantalla" type="text" class="form-control" style="color: #333;" placeholder="Digite la operación" aria-label="Username" aria-describedby="addon-wrapping" data-custom-attr="true" onclick="console.log('No deberías usar onclick en HTML')">
             </div>
 
-            <table>
-                <tr>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     7     " onclick="formarOperacion(7)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     8     " onclick="formarOperacion(8)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     9     " onclick="formarOperacion(9)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     X     " onclick="formarMultiplicacion()">
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     4     " onclick="formarOperacion(4)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     5     " onclick="formarOperacion(5)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     6     " onclick="formarOperacion(6)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     -     " onclick="formarResta()">
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     1     " onclick="formarOperacion(1)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     2     " onclick="formarOperacion(2)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     3     " onclick="formarOperacion(3)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     +     " onclick="formarSuma()">
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="    CE     " onclick="limpiarPantalla()">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     0     " onclick="formarOperacion(0)">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     /     " onclick="formarDivision()">
-                    </th>
-                    <th>
-                        <input class="btn btn-primary" type="button" value="     =     " onclick="calcularResultado()">
-                    </th>
-                </tr>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Números</th>
+                        <th>Números</th>
+                        <th>Números</th>
+                        <th>Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="btn btn-primary" type="button" value="     7     " onclick="formarOperacion(7)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     8     " onclick="formarOperacion(8)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     9     " onclick="formarOperacion(9)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     X     " onclick="formarMultiplicacion()"></td>
+                    </tr>
+ 
+                    <tr>
+                        <td><input class="btn btn-primary" type="button" value="     4     " onclick="formarOperacion(4)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     5     " onclick="formarOperacion(5)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     6     " onclick="formarOperacion(6)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     -     " onclick="formarResta()"></td>
+                    </tr>
+ 
+                    <tr>
+                        <td><input class="btn btn-primary" type="button" value="     1     " onclick="formarOperacion(1)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     2     " onclick="formarOperacion(2)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     3     " onclick="formarOperacion(3)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     +     " onclick="formarSuma()"></td>
+                    </tr>
+ 
+                    <tr>
+                        <td><input class="btn btn-primary" type="button" value="    CE     " onclick="limpiarPantalla()"></td>
+                        <td><input class="btn btn-primary" type="button" value="     0     " onclick="formarOperacion(0)"></td>
+                        <td><input class="btn btn-primary" type="button" value="     /     " onclick="formarDivision()"></td>
+                        <td><input class="btn btn-primary" type="button" value="     =     " onclick="calcularResultado()"></td>
+                    </tr>
+                </tbody>
             </table>
             
-
           </div>
           <div class="col-4"></div>
         </div>
